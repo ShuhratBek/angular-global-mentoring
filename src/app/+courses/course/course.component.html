@@ -1,0 +1,18 @@
+<md-card [style.margin]="'10px'">
+    <md-card-header>
+        <div md-card-avatar>
+            <img [src]="course.author.avatar">
+        </div>
+        <md-card-title>{{course.title}}</md-card-title>
+        <md-card-subtitle>
+            <span>{{course.duration}}</span>
+            <span>{{course.date}}</span>
+        </md-card-subtitle>
+    </md-card-header>
+    <img md-card-image [src]="course.cover">
+    <md-card-content>{{course.description}}</md-card-content>
+    <md-card-actions>
+        <button md-button>Edit</button>
+        <button md-button>Delete</button>
+    </md-card-actions>
+</md-card>

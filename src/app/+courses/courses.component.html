@@ -1,0 +1,13 @@
+<md-toolbar class="filter">
+    <md-input-container fxFlexOffset="5%">
+        <md-icon mdPrefix >search</md-icon>
+        <input mdInput placeholder="Search" type="search">
+    </md-input-container>
+    <span fxFlex></span>
+    <button md-fab color="primary" >
+        <md-icon>add</md-icon>
+    </button>
+</md-toolbar>
+<div fxLayoutWrap fxLayoutGap="0" fxLayoutAlign="start center" fxFlex="0 0 calc(90% - 20px)" fxFlexOffset="5%">
+    <course [course]="course" *ngFor="let course of courses" fxFlex="25%"></course>
+</div>
